@@ -122,29 +122,28 @@ if ($env:APP_MODE -eq "production") {
   Write-Output "🧪 Ejecutando en entorno de desarrollo"
 }
 
-📁 Estructura del proyecto script_variable_de_entorno
-script_variable_de_entorno/
-│
-├── README.md                  # Documentación principal del proyecto
-├── .env                       # Archivo de entorno (generado automáticamente)
-│
-├── setup_env.sh              # Script maestro para Linux (bash)
-├── setup_env.ps1             # Script maestro para Windows (PowerShell)
-│
-├── run_app.sh                # Script de prueba para Linux
-├── run_app.ps1               # Script de prueba para Windows
-│
-├── load_env.sh               # Script de carga de variables desde .env (Linux)
-├── load_env.ps1              # Script de carga de variables desde .env (Windows)
-│
-├── env_templates/            # Plantillas de entorno
-│   ├── development.env       # Valores por defecto para desarrollo
-│   └── production.env        # Valores por defecto para producción
-│
-├── scripts/                  # Scripts auxiliares o extendidos
-│   ├── validate_env.sh       # (opcional) Valida formato del .env
-│   └── docker_env_setup.sh   # (opcional) Integración con Docker
-│
-└── docs/                     # Recursos didácticos o visuales
-    ├── esquema_variables.png # Infografía explicativa (opcional)
-    └── pasos_configuracion.md # Guía paso a paso para estudiantes
+<h3>📁 Estructura del proyecto <code>script_variable_de_entorno</code></h3>
+<table>
+  <thead>
+    <tr>
+      <th>Ruta</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>README.md</code></td><td>Documentación principal del proyecto</td></tr>
+    <tr><td><code>.env</code></td><td>Archivo de entorno (generado automáticamente)</td></tr>
+    <tr><td><code>setup_env.sh</code></td><td>Script maestro para Linux (bash)</td></tr>
+    <tr><td><code>setup_env.ps1</code></td><td>Script maestro para Windows (PowerShell)</td></tr>
+    <tr><td><code>run_app.sh</code></td><td>Script de prueba para Linux</td></tr>
+    <tr><td><code>run_app.ps1</code></td><td>Script de prueba para Windows</td></tr>
+    <tr><td><code>load_env.sh</code></td><td>Script de carga de variables desde .env (Linux)</td></tr>
+    <tr><td><code>load_env.ps1</code></td><td>Script de carga de variables desde .env (Windows)</td></tr>
+    <tr><td><code>env_templates/development.env</code></td><td>Valores por defecto para desarrollo</td></tr>
+    <tr><td><code>env_templates/production.env</code></td><td>Valores por defecto para producción</td></tr>
+    <tr><td><code>scripts/validate_env.sh</code></td><td>(Opcional) Valida formato del .env</td></tr>
+    <tr><td><code>scripts/docker_env_setup.sh</code></td><td>(Opcional) Integración con Docker</td></tr>
+    <tr><td><code>docs/esquema_variables.png</code></td><td>Infografía explicativa (opcional)</td></tr>
+    <tr><td><code>docs/pasos_configuracion.md</code></td><td>Guía paso a paso para estudiantes</td></tr>
+  </tbody>
+</table>
